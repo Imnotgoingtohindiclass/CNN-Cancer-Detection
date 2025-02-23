@@ -15,6 +15,8 @@ Before running the notebook, ensure you have the necessary dependencies installe
 pip install -r requirements.txt
 ```
 
+The zip file with the images can be found at [Kaggle.com](https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images).
+
 ---
 ## Notebook Workflow
 
@@ -23,13 +25,13 @@ The required Python libraries are installed using `pip`. These include:
 - **TensorFlow** and **Keras** for building the CNN model.
 - **scikit-learn** for preprocessing and evaluation.
 - **OpenCV** for image processing.
-- **NumPy, Pandas, and Matplotlib** for data handling and visualization.
+- **NumPy, Pandas, and Matplotlib** for data handling and visualisation.
 
 ### 2. Import Dependencies
-Necessary libraries are imported for data manipulation, visualization, and CNN model construction.
+Necessary libraries are imported for data manipulation, visualisation, and CNN model construction.
 
 ### 3. Define Path to Images
-The dataset containing lung images is organized into subdirectories, each corresponding to a class (**lung_aca, lung_n, lung_scc**).
+The dataset containing lung images is organised into subdirectories, each corresponding to a class (**lung_aca, lung_n, lung_scc**).
 
 ### 4. Display Sample Images
 Three random images from each class are displayed to provide a visual overview of the dataset.
@@ -53,12 +55,12 @@ A **Sequential CNN model** is built using Keras. The architecture includes:
 - **Dropout layers** to prevent overfitting.
 
 ### 8. Compile the Model
-- The model is compiled using the **Adam optimizer**.
+- The model is compiled using the **Adam optimiser**.
 - **Categorical cross-entropy** is used as the loss function.
 - **Accuracy** is selected as the evaluation metric.
 
 ### 9. Define Callbacks
-To optimize training, the following callbacks are implemented:
+To optimise training, the following callbacks are implemented:
 - **Early Stopping**: Stops training if validation loss stops improving.
 - **Learning Rate Reduction**: Adjusts learning rate dynamically.
 - **Custom Callback**: Stops training once validation accuracy reaches **90%**.
@@ -68,12 +70,12 @@ To optimize training, the following callbacks are implemented:
 - Training progress is monitored using defined callbacks.
 
 ### 11. Evaluate the Model
-- The training history is visualized, showing **loss** and **accuracy** over epochs.
-- The model's performance is analyzed using a **confusion matrix** and **classification report**.
+- The training history is visualised, showing **loss** and **accuracy** over epochs.
+- The model's performance is analysed using a **confusion matrix** and **classification report**.
 
 ---
 ## Results
-- A **confusion matrix** and **classification report** summarize model performance.
+- A **confusion matrix** and **classification report** summarise model performance.
 - The results provide insights into accuracy, precision, recall, and F1-score across all three classes.
 
 ---
@@ -81,10 +83,10 @@ To optimize training, the following callbacks are implemented:
 This notebook serves as a comprehensive guide for building a CNN-based image classification model. By following the outlined steps, the process can be adapted for **other image classification tasks** with similar datasets.
 
 For improvements, consider:
-- **Data augmentation** to enhance generalization.
-- **Hyperparameter tuning** for better optimization.
+- **Data augmentation** to enhance generalisation.
+- **Hyperparameter tuning** for better optimisation.
 - **Transfer learning** with pre-trained CNN architectures for improved accuracy.
 
 ---
-## License
-This project is open-source and available for use and modification under the **MIT License**.
+## Contact
+For queries, contact [asfmaskj@gmail.com]
