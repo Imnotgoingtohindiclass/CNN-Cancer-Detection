@@ -12,7 +12,7 @@ The notebook covers **data preparation, model building, training, and evaluation
 ## Prerequisites
 Before running the notebook, ensure you have the necessary dependencies installed. Install them using the following command:
 ```bash
-pip install tensorflow scikit-learn opencv-python numpy pandas matplotlib
+pip install -r requirements.txt
 ```
 
 ---
